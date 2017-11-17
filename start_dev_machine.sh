@@ -15,7 +15,7 @@ zone=${ZONE:-'us-central1-f'}
 status=$(gcloud compute instances describe "$instance" --zone "$zone" \
            | awk '/^status/ { print $2 }')
 case "$status" in
-  RUNNING|STAGING) : ;;
+  RUNNING|STAGING|STOPPING) : ;;
   TERMINATED)
     gcloud compute instances start "$instance" --zone "$zone"
     ;;
