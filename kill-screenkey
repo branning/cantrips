@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+#
+# kill screenkey, program to overlay pressed keys onto screen
+# 
+# would be helpful if you copy it somewhere on the path
+# e.g.,
+#
+#     sudo ln -s $(readlink -f ./kill-screenkey) /usr/local/bin/kill-screenkey
+#
+# Then, if you have screenkey installed and running:
+#
+#     git clone https://github.com/wavexx/screenkey.git
+#     sudo ln -s $(readlink -f ./screenkey/screenkey) /usr/local/bin/screenkey 
+#     screenkey
+#
+# You can kill it with
+#
+#     kill-screenkey
+# 
+
+kill $(pgrep -f screenkey)
