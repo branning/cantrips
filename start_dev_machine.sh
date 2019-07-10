@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# start a GCE instance by name and connect to it by SSH when its ready
+# start a GCE instance by name and connect to it by SSH when it's ready
 
 set -o errexit
 
