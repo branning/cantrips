@@ -5,6 +5,7 @@
 TEST=${TEST-'echo'}
 
 SPECIAL='
+  main
   master
   develop
   \*
