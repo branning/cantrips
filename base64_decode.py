@@ -4,7 +4,7 @@ import base64
 import sys
 
 if len(sys.argv) != 2:
-    print(f"Usage: python {__name__} <base64_encoded_string>")
+    print("Usage: python " + __name__ + " <base64_encoded_string>")
     sys.exit(1)
 
 encoded_string = sys.argv[1]
